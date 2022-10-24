@@ -6,7 +6,7 @@ type Data = {
 }
 
 const handler: NextApiHandler = (req: NextApiRequest, res: NextApiResponse<Data>) => {
-    return res.status(200).json({success: true, message: "nextjs-template"});
+    return res.status(200).json({success: true, message: "heaton"});
 }
 
 export default handler;
