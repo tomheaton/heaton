@@ -1,11 +1,11 @@
-import '@styles/globals.css';
+import "@styles/globals.css";
 import React from "react";
 
-const RootLayout: React.FC<{
+type RootLayoutProps = {
     children: React.ReactNode
-}> = ({
-    children
-}) => {
+}
+
+const RootLayout = ({children}: RootLayoutProps) => {
     return (
         <html lang="en">
             <head>
