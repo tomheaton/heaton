@@ -1,6 +1,4 @@
-import { NextPage } from "next";
-
-const Home: NextPage = () => {
+const Home = () => {
     return (
         <div className={"flex flex-col h-screen w-full items-center justify-center"}>
             <h1 className={"font-bold text-5xl"}>
