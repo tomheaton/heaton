@@ -1,11 +1,9 @@
 const Home = () => {
-    return (
-        <div className={"flex flex-col h-screen w-full items-center justify-center"}>
-            <h1 className={"font-bold text-5xl"}>
-                heaton
-            </h1>
-        </div>
-    );
-}
+  return (
+    <div className={"flex h-screen w-full flex-col items-center justify-center"}>
+      <h1 className={"text-5xl font-bold"}>heaton</h1>
+    </div>
+  );
+};
 
 export default Home;
