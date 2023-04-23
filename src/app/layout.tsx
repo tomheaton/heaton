@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://heaton.one",
   },
   keywords: "heaton",
-  themeColor: "#66b193",
+  themeColor: "#000000",
   openGraph: {
     title: "Heaton",
     description: "Heaton",
