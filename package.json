@@ -1,13 +1,8 @@
 {
   "name": "heaton",
-  "description": "heaton website",
+  "description": "heaton",
   "version": "1.0.0",
   "private": true,
-  "author": {
-    "email": "tom@tomheaton.dev",
-    "name": "Tom Heaton",
-    "url": "tomheaton.dev"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

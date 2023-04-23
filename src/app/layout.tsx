@@ -1,21 +1,54 @@
 import "@/styles/globals.css";
-import React from "react";
+import type { Metadata } from "next";
+import type { PropsWithChildren } from "react";
 
-type RootLayoutProps = {
-  children: React.ReactNode;
+export const metadata: Metadata = {
+  metadataBase: new URL("https://heaton.one"),
+  title: "Heaton",
+  description: "Heaton",
+  authors: {
+    name: "Heaton",
+    url: "https://heaton.one",
+  },
+  keywords: "heaton",
+  themeColor: "#66b193",
+  openGraph: {
+    title: "Heaton",
+    description: "Heaton",
+    type: "website",
+    url: "https://heaton.one",
+    // images: {
+    //   url: "/avatar.jpg",
+    //   alt: "Heaton Avatar",
+    // },
+    locale: "en_GB",
+  },
+  twitter: {
+    card: "summary",
+    // card: "summary_large_image",
+    // site: "@heaton",
+    // creator: "@heaton",
+    title: "Heaton",
+    description: "Heaton",
+    // images: {
+    //   url: "/avatar.jpg",
+    //   alt: "Heaton Avatar",
+    // },
+  },
+  viewport: "width=device-width, initial-scale=1",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    title: "Heaton",
+  },
+  // icons: {
+  //   apple: "/apple-touch-icon.png",
+  // },
 };
 
-const RootLayout = ({ children }: RootLayoutProps) => {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <head>
-        <title>heaton</title>
-        <meta name="description" content="heaton" />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body>{children}</body>
     </html>
   );
-};
-
-export default RootLayout;
+}
