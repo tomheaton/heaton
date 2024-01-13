@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { PropsWithChildren } from "react";
 
 export const metadata: Metadata = {
@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     url: "https://heaton.one",
   },
   keywords: "heaton",
-  themeColor: "#000000",
   openGraph: {
     title: "Heaton",
     description: "Heaton",
@@ -35,7 +34,6 @@ export const metadata: Metadata = {
     //   alt: "Heaton Avatar",
     // },
   },
-  viewport: "width=device-width, initial-scale=1",
   manifest: "/manifest.json",
   appleWebApp: {
     title: "Heaton",
@@ -43,6 +41,12 @@ export const metadata: Metadata = {
   // icons: {
   //   apple: "/apple-touch-icon.png",
   // },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#66b193",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
